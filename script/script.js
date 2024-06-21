@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("botao-noticias").addEventListener("click", function() {
-        var homePath = 'index.html';
+        var homePath = '/';
         var newsAnchor = '#news';
 
         var currentPath = window.location.pathname;
