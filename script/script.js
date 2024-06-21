@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("botao-noticias").addEventListener("click", function() {
-        var homePath = '/';
+        var homePath = 'index.html';
         var newsAnchor = '#news';
 
         var currentPath = window.location.pathname;
@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             window.location.href = homePath + newsAnchor;
         }
-    });   
+        
+        if (window.location.hash === newsAnchor) {
+            document.getElementById("news").scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
 document.addEventListener('DOMContentLoaded', function() {
     var botao_home = document.getElementById("botao-home");
