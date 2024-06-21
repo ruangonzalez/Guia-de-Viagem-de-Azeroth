@@ -26,12 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("botao-noticias").addEventListener("click", function() {
-        var currentPage = window.location.pathname;
+        var homePath = '/';
+        var newsAnchor = '#news';
 
-        if (currentPage === "/" || currentPage === "/index.html") {
+        var currentPath = window.location.pathname;
+
+        if (currentPath === homePath || currentPath === "/index.html") {
         document.getElementById("news").scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = '/#news';
+            window.location.href = homePath + newsAnchor;
         }
     });   
 });
