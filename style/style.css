@@ -34,7 +34,6 @@
     }
 }
 .texto-pulsando {
-    font-size: 48px;
     color: #ffffff;
     animation: pulsa 10s infinite;
 }
@@ -58,17 +57,18 @@ header {
     text-align: center;
     position: fixed;
     z-index: 2;
-    width: 50%;
+    width: 30%;
+    height: 9%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
 .buttons {
-    padding: 10px 0px;
+    padding: 10px -1px;
 }
 .btn {
-    padding: 1% 9%;
+    padding: 1% 5%;
     color: #ffffff;
-    width: 50px;
+    width: 10px;
     background: rgba(41, 40, 40, 0.8);
     border-radius: 5px;
     text-align: center;
@@ -76,7 +76,7 @@ header {
     cursor: pointer;
     text-decoration: none;
     font-family: "Silkscreen", sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
 }
 .btn:hover {
@@ -84,7 +84,7 @@ header {
     color: #ffffff;
 }
 header h1 {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 main h2  {
@@ -139,7 +139,7 @@ main p {
      z-index: 1;
 }
 .text h2 {
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     font-weight: 400;
     font-style: normal;
@@ -150,7 +150,7 @@ main p {
     text-shadow: 0 0 10px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff;
 }
 .text p {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     transform: translateX(50px);
     transition: opacity 10s, transform 5s;
@@ -193,7 +193,7 @@ main p {
 .container-lugares {
     display: grid;
     align-items: center;
-    grid-template-columns: 500px 400px 500px 500px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: #363636;
     padding: 10px;
 }
@@ -211,17 +211,17 @@ main p {
     grid-column-start: 2;
     grid-column-end: 3;
     border: 4px solid rgba(250, 250, 250, 0.8);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
 .container-lugares #orgrimmar h3 {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .container-lugares #orgrimmar p {
-    font-size: 20px;
-    padding-bottom: 10%;
+    font-size: 15px;
+    padding-bottom: 3%;
 
 }
 .container-lugares #imagem-orgrimmar {
@@ -246,16 +246,16 @@ main p {
     grid-row-start: 3;
     grid-row-end: 4;
     border: 4px solid rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 .container-lugares #altaforja h3 {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .container-lugares #altaforja p {
-    font-size: 20px;
-    padding-bottom: 10%;
+    font-size: 15px;
+    padding-bottom: 3%;
 
 }
 .container-lugares #imagem-altaforja {
@@ -280,16 +280,16 @@ main p {
     grid-row-start: 4;
     grid-row-end: 5;
     border: 4px solid rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 .container-lugares #queldanas h3 {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .container-lugares #queldanas p {
-    font-size: 20px;
-    padding-bottom: 10%;
+    font-size: 15px;
+    padding-bottom: 3%;
 
 }
 .container-lugares #imagem-queldanas {
@@ -313,16 +313,16 @@ main p {
     grid-column-end: 4;
     grid-row-start: 5;
     border: 4px solid rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 .container-lugares #ventobravo h3 {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .container-lugares #ventobravo p {
-    font-size: 20px;
-    padding-bottom: 10%;
+    font-size: 15px;
+    padding-bottom: 3%;
 
 }
 .container-lugares #imagem-ventobravo {
@@ -339,17 +339,13 @@ main p {
     max-width: 100%;
 }
 .container-lugares h2 {
-    font-size: 40px;
-}
-.container-lugares h3 {
-    font-size: 20px;
-    font-family: "Silkscreen", sans-serif;
+    font-size: 35px;
 }
 .wrapper {
     display: grid;
     align-items: center;
-    grid-template-columns: 550px 400px 400px 400px;
-    grid-template-rows: 100px 400px 350px;
+    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+    grid-template-rows: 0fr 0fr 1fr 0fr 0fr;
     background-color: #3d3e3f;
     padding: 10px;
 }
@@ -387,7 +383,7 @@ main p {
     opacity: 1;
 }
 .texto-artigo p {
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff;
 }
 .texto-artigo > * {
@@ -405,8 +401,7 @@ main p {
     text-align: center;
 }
 .container-news #titulo h2 {
-    font-size: 60px;
- 
+    font-size: 40px;
 }
 
 .container-news #primeiro-artigo {
@@ -462,7 +457,7 @@ main p {
     padding-bottom: 10px
 }
 .container-news h3 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* CSS - about.html*/
@@ -474,11 +469,10 @@ main p {
 }
 .container-about .about {
     width: 50%;
-
     text-align: center;
 }
 .container-about h2 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 20px;
     transform: translateX(50px);
@@ -486,14 +480,14 @@ main p {
     text-shadow: 0 0 1px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 10px #ffffff;
 }
 .container-about .p1 {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     transform: translateX(50px);
     transition: opacity 5s, transform 5s;
     padding-bottom: 20px;
 }
 .container-about .p2 {
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
     transform: translateX(50px);
     transition: opacity 10s, transform 10s;
@@ -522,7 +516,7 @@ main p {
     border: 4px solid rgba(255, 255, 255, 0.8);
 }
 .form h2{
-    font-size: 30px;
+    font-size: 20px;
 }
 .form .botao {
     -webkit-box-shadow: 0px 9px 25px 8px rgba(0,0,0,0.75);
@@ -539,7 +533,7 @@ main p {
     font-weight: bold;
 }
 .form .label-agree-term {
-    font-size: 15px;
+    font-size: 10px;
 }
 /* CSS - formAction.html */
 
@@ -559,7 +553,7 @@ main p {
     width: 50%;
     height: 25%;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
     border: 4px solid rgba(255, 255, 255, 0.8);
 }
 .formaction-container .botao {
@@ -579,4 +573,17 @@ box-shadow: 0px 9px 25px 8px rgba(0,0,0,0.75);
 .botao:hover {
     background: rgba(29, 28, 28, 1);
     color: #ffffff;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(73, 72, 72, 0.3);
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: 0.2%;
+    text-align: center;
+    font-size: 14px;
+    z-index: 2;
+    width: 100%;
 }
