@@ -505,7 +505,7 @@ main p {
     padding-bottom: 20px;
 }
 
-/* CSS - contact.html */
+/* CSS - form.html */
 
 .container-contact {
     height: 100vh;
@@ -547,7 +547,43 @@ main p {
     font-size: 10px;
 }
 /* CSS - formAction.html */
-
+.dados {
+    transform: translateX(50px);
+    transition: opacity 10s, transform 5s;
+    -webkit-box-shadow: 0px 0px 23px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 11px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 11px rgba(0,0,0,0.75);
+}
+.dados table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 4px solid #ffffff;
+}
+th {
+    background: rgba(41, 40, 40, 1);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+}
+tr {
+    background: rgba(41, 40, 40, 0.8);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+}
+td {
+    background: rgba(41, 40, 40, 0.8);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+}
 .formaction-container {
     height: 100vh;
     display: grid;

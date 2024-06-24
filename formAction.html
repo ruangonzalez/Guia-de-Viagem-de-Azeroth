@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-        <script src="script/script.js" defer></script>
+        <script type="text/javascript" src="script/script.js"></script>
         <title>Guia de Viagem para Azeroth</title>
     </head>
     <body>
@@ -18,24 +18,30 @@
                     <div class="buttons">
                         <a class="btn" id="botao-home" href="index.html">Home</a>
                         <a class="btn" id="botao-noticias" href="#container-news">News</a>
-                        <a class="btn" href="contact.html">Contact</a>
+                        <a class="btn" href="form.html">Contact</a>
                         <a class="btn" href="about.html">About</a>
                     </div>
                 </header>
             </div>
             <div class="formaction-container">
-                <div class="textos hidden">
+                <div class="textos hidden" id="painel-mensagem">
                     <h3 class="corners">Seus dados foram recebidos!</h3>
                     <p class="subtitulo">entraremos em contato em breve</p>
-                    <input type="button" class="botao" value="Voltar" onclick="window.location.href='contact.html'">
+                    <input type="button" class="botao" value="Voltar" onclick="window.location.href='form.html'">
                 </div>
-                <script language=javascript>
-                    var params = new Array();
-                    params = getParameters();
-                    for (let[ key, value] of Object.entries(params)) {
-                        document.write("<tr><td style='text-align: center;'><b>" + key + '</b></td><td>' + value + "</td></tr>");    
-                    }
-                    </script>
+                <div class="dados hidden" id="dados">
+                    <table>
+                        <tr>
+                            <th colspan="2" style="text-align: center;">Dados Recebidos</th>
+                        </tr>
+                        <script language=javascript>
+                            var params = new Array();
+                            params = getParameters();
+                            for (let[ key, value] of Object.entries(params)) {
+                                document.write("<tr><td style='text-align: center;'><b>" + key + '</b></td><td>' + value + "</td></tr>");    
+                            }
+                            </script>
+                    </table>
             </div>
         </div>
         <footer>
